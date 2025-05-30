@@ -1,0 +1,31 @@
+/* Customize bullet container */
+.custom-swiper .swiper-pagination {
+  bottom: 10px; /* move up/down if needed */
+  display: flex;
+  justify-self: left;
+}
+
+/* Style individual bullets */
+.custom-swiper .swiper-pagination-bullet {
+  width: 30px;
+  height: 8px;
+  background-color: #aaaaaa91; /* inactive color */
+  border-radius: 9999px; /* pill shape */
+  opacity: 1;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+/* Active bullet */
+.custom-swiper .swiper-pagination-bullet-active {
+  background-color: #ffffff; /* active color (e.g., red-400) */
+  transform: scale(1.2); /* optional: slight zoom */
+}
+
+.next-custom-swiper .swiper-pagination-bullet {
+  background-color: #aaaaaa91; /* inactive color */
+  transition: background-color 0.3s, transform 0.3s;
+}
+.next-custom-swiper .swiper-pagination-bullet-active {
+  background-color: #ffffff; /* active color (e.g., red-400) */
+  transform: scale(1.2); /* optional: slight zoom */
+}

@@ -1,26 +1,121 @@
 @import "tailwindcss";
+@import 'swiper/css';
+@import 'swiper/css/navigation';
+@import 'swiper/css/pagination';
+
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #eceaea;
+  --foreground: #000000;
+  --text: #000000;
+  --logo-filter: invert(1) brightness(0);
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+[data-theme='dark'] {
+  --background: #000000;
+  --foreground: #eceaea;
+  --text: #eceaea;
+  --logo-filter: invert(0) brightness(1);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+.primary{
+  color: #000000;
+}
+.primary2{
+  background-color: #000000;
+}
+.curve{
+  color: var(--background);
+}
+.logo-filter{
+  filter: var(--logo-filter);
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/* Optional: Add a soft shadow or background blur layer */
+
+.blurry {
+  backdrop-filter: blur(10px);
+  background: rgba(51, 51, 51, 0.6);
+  border-radius: 3rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  /* border: 1px solid rgba(215, 210, 210, 0.3); */
+}
+
+.iridescence-container {
+  width: 100%;
+  height: 100%;
+}
+
+/* Active bullet */
+.custom-swiper .swiper-pagination-bullet-active {
+  background-color: #ffffff; /* active color (e.g., red-400) */
+  transform: scale(1.2); /* optional: slight zoom */
+}
+
+.shiny-text {
+  color: #b5b5b5a4; /* Adjust this color to change intensity/style */
+  background: linear-gradient(
+    120deg,
+    rgba(255, 255, 255, 0) 40%,
+    rgba(255, 255, 255, 0.8) 50%,
+    rgba(255, 255, 255, 0) 60%
+  );
+  background-size: 200% 100%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  display: inline-block;
+  animation: shine 5s linear infinite;
+}
+
+@keyframes shine {
+  0% {
+    background-position: 100%;
+  }
+  100% {
+    background-position: -100%;
+  }
+}
+
+.shiny-text.disabled {
+  animation: none;
+}
+
+/* animated text */
+@keyframes fadeInOut {
+  0% { opacity: 0; transform: translateY(5px); }
+  10% { opacity: 1; transform: translateY(0); }
+  90% { opacity: 1; transform: translateY(0); }
+  100% { opacity: 0; transform: translateY(-5px); }
+}
+
+.animate-fade {
+  animation: fadeInOut 3s ease-in-out forwards;
+}
+
+
+/* pulse in header */
+.zoom{
+  background-color: #07d973; /* Adjust color as needed */
+  border-radius: 50%;
+  width: 10px; /* Adjust size as needed */
+  height: 10px; /* Adjust size as needed */
+  animation: zoom 2s infinite;
+  transform: scale(1);
+}
+
+@keyframes zoom {
+  from {
+    transform: scale(1);
+    opacity: 1;
+  }
+  to {
+    transform: scale(2);
+    opacity: 0;
+  }
 }
