@@ -1,7 +1,5 @@
 import Navbar from "./components/layout/Navbar";
 import Header from "./components/layout/Header";
-import Awards from "./components/layout/Awards";
-import Works from "./components/layout/Works";
 
 export default function Home() {
   return (

@@ -1,7 +1,6 @@
 import ClickSpark from "../ui/ClickSpark";
 import Iridescence from "../ui/Iridescence";
-import SplitText from "../ui/SplitText";
-import WordListSwap from "./WordListSwap";
+import SplitText from "./SplitText";
 
 export default function Header() {
   return (
@@ -13,7 +12,6 @@ export default function Header() {
       duration={400}
     >
       <div className='overflow-hidden w-full h-[95vh] rounded-[2rem] relative text-white'>
-        {/* <img src="/texture.png" alt="" className='absolute max-w-[200%] bottom-0 top-0'/> */}
         
         <header className="absolute flex flex-col items-center justify-center inset-0 z-50 p-4  text-xs md:text-lg"> 
           <div className="flex flex-col items-center text-center gap-2">
