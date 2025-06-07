@@ -11,9 +11,9 @@ export default function Header() {
       sparkCount={8}
       duration={400}
     >
-      <div className='overflow-hidden w-full h-[95vh] rounded-[2rem] relative text-white'>
+      <div className='overflow-hidden w-full h-[100vh] rounded-[2rem] relative text-white'>
         
-        <header className="absolute flex flex-col items-center justify-center inset-0 z-50 p-4  text-xs md:text-lg"> 
+        <header className="absolute flex flex-col gap-6 items-center justify-center inset-0 z-50 p-4  text-xs md:text-lg"> 
           <div className="flex flex-col items-center text-center gap-2">
             <div className="cursor-default px-6 py-2 text-xs md:text-sm rounded-[3rem] border flex items-center gap-3">
                 <div className="relative w-fit h-fit flex items-center justify-center">
@@ -35,7 +35,7 @@ export default function Header() {
             <p>We specialize in delivering websites and apps that focuses on business growth for our clients.</p>
           </div>
 
-          <a href="https://x.com/OdeyemiKevin/status/1928580530087321626?t=olFkOrXGAkldYqS2Hg0kSg&s=19" target="_blank" className="bg-[var(--background)] text-[var(--foreground)] px-6 py-2 rounded-[2rem] absolute bottom-[1rem]">Roast my website</a>
+          <a href="https://x.com/OdeyemiKevin/status/1928580530087321626?t=olFkOrXGAkldYqS2Hg0kSg&s=19" target="_blank" className="bg-[var(--background)] text-[var(--foreground)] px-6 py-2 rounded-[2rem]">Hire me</a>
         </header>
         
         <div className="relative w-full h-full">

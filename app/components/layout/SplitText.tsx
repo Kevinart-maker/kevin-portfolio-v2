@@ -128,11 +128,11 @@ const SplitText: React.FC<SplitTextProps> = ({
       <WordListSwap
         mainClassName='text-center w-full flex justify-center items-center'
         texts={[
-          "convert",
+          "convert ✽",
           "scale effortlessly ✽",
-          "impress your audience",
-          "drive results",
-          "grow your business",
+          "impress your audience ✽",
+          "drive results ✽",
+          "grow your business ✽",
         ]}
         staggerDuration={0.025}
       />

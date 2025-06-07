@@ -18,7 +18,7 @@ export default function Navbar() {
     <nav className="fixed top-0 left-0 w-full z-[100]">
         <div className="w-full h-[10px] bg-[var(--background)] z-[300]"/>
         
-        <div className='flex justify-between items-center p-5 rounded-[2rem] px-[2rem] blurry w-[85%] absolute left-1/2 top-[calc(7px+1rem)] transform -translate-x-1/2 text-white'>
+        <div className='flex justify-between items-center p-5 px-[2rem] blurry rounded-[3rem] w-[85%] absolute left-1/2 top-[calc(7px+1rem)] transform -translate-x-1/2 text-white'>
             <div className='flex items-center gap-[1.8rem] text-3xl font-bold'>
               <h1>Kevin.</h1>
             </div>
@@ -42,13 +42,13 @@ export default function Navbar() {
 
 
             <div className='flex flex-col w-full gap-3 mt-[10rem] text-2xl font-medium'>
-              <div>Projects</div>
+              <div>Work</div>
               <div className='w-full h-[0.1px] bg-white'/>
-              <div>About</div>
+              <div>Services</div>
               <div className='w-full h-[0.1px] bg-white'/>
-              <div>Blog</div>
+              <div>Testimonials</div>
               <div className='w-full h-[0.1px] bg-white'/>
-              <div>Contact</div>
+              <a href="https://cal.com/odeyemikevin/15min" target='_blank'>Book a call</a>
               <div className='w-full h-[0.1px] bg-white'/>
             </div>
 

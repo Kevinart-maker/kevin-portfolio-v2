@@ -32,7 +32,7 @@ export default function Awards() {
         </SwiperSlide>
         <SwiperSlide>
           <div className='w-full h-full flex flex-col gap-3 items-center justify-center cursor-grab text-center'>
-            <h1 className='text-[4rem] font-semibold'>
+            <h1 style={{ width: '' }} className='text-[4rem] font-semibold'>
               <CountUp end={100} duration={3} separator="," />k
             </h1>
             <span>Total lines of code written</span>
