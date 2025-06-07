@@ -5,6 +5,7 @@
 
 
 :root {
+  --hover: #5b5b5b;
   --background: #eceaea;
   --foreground: #000000;
   --text: #000000;
@@ -12,6 +13,7 @@
 }
 
 [data-theme='dark'] {
+  --hover: #d1d1d1;
   --background: #000000;
   --foreground: #eceaea;
   --text: #eceaea;
@@ -196,4 +198,22 @@ body {
   position: relative;
   width: 100%;
   height: 100%;
+}
+
+
+/* scroll styling */
+
+.scrollbar::-webkit-scrollbar {
+  height: 3px; /* Height of the horizontal scrollbar */
+  background: #474747; /* Scrollbar background color */
+  border-radius: 10px; /* Rounded scrollbar */
+}
+
+.scrollbar::-webkit-scrollbar-thumb {
+  background: var(--foreground); /* Thumb color */
+  border-radius: 10px; /* Rounded thumb */
+}
+
+.scrollbar::-webkit-scrollbar-thumb:hover {
+  background: #000000; /* Slightly darker color on hover */
 }

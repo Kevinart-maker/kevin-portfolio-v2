@@ -2,6 +2,7 @@ import Navbar from "./components/layout/Navbar";
 import Header from "./components/layout/Header";
 import ProjectSlider from "./components/layout/ProjectSlider";
 import About from "./components/layout/About";
+import Works from "./components/layout/Works";
 
 export default function Home() {
   return (
@@ -39,6 +40,7 @@ export default function Home() {
           <Awards />
           <Works />
         </div> */}
+        <Works />
       </div>
 
 
