@@ -41,8 +41,20 @@ export default function Works() {
   ))
   
   return (
-    <div className="md:px-[5rem] mt-[10rem] xl:mt-[15rem] flex flex-col gap-[7rem] items-center w-full text-left">
-      <h1 className="font-bold text-[2.5rem] text-center md:text-[3rem]">Here's a taste of <br /> what we cook</h1>
+    <div className="md:px-[5rem] mt-[10rem] xl:mt-[15rem] flex flex-col gap-[7rem] items-center w-full text-left relative">
+
+      <h1 className="font-bold text-[2.5rem] text-center md:text-[3rem] relative">
+        <div className="absolute right-0 md:-right-[10rem] -top-5">
+          <div className='w-px h-[3rem] bg-[#474747]'/>
+          <div className='w-[3rem] h-px bg-[#474747] translate-x-[-1.5rem] translate-y-[-1.5rem]'/>
+        </div>
+
+        <div className="absolute left-10 md:-left-[8rem] xl:-left-[10rem] -top-5">
+          <div className='w-px h-[3rem] bg-[#474747]'/>
+          <div className='w-[3rem] h-px bg-[#474747]  translate-x-[-1.5rem] translate-y-[-1.5rem]'/>
+        </div>
+        Here's a taste of <br /> what we cook
+      </h1>
 
       <div className='w-full px-[1rem] flex gap-[1rem] pb-[3rem] overflow-hidden overflow-x-auto scrollbar'>
         {work}

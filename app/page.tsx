@@ -3,6 +3,7 @@ import Header from "./components/layout/Header";
 import ProjectSlider from "./components/layout/ProjectSlider";
 import About from "./components/layout/About";
 import Works from "./components/layout/Works";
+import Services from "./components/layout/Services";
 
 export default function Home() {
   return (
@@ -41,6 +42,7 @@ export default function Home() {
           <Works />
         </div> */}
         <Works />
+        <Services />
       </div>
 
 
