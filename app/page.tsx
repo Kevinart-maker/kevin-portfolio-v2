@@ -41,8 +41,8 @@ export default function Home() {
           <Awards />
           <Works />
         </div> */}
-        <Works />
         <Services />
+        <Works />
       </div>
 
 

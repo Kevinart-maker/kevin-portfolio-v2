@@ -1,5 +1,4 @@
 import { works } from "@/app/data/data"
-import TiltedCard from "../ui/TiltedCard"
 
 export default function Works() {
   const work = works.map((item, index)=>(
@@ -53,7 +52,7 @@ export default function Works() {
           <div className='w-px h-[3rem] bg-[#474747]'/>
           <div className='w-[3rem] h-px bg-[#474747]  translate-x-[-1.5rem] translate-y-[-1.5rem]'/>
         </div>
-        Here's a taste of <br /> what we cook
+        <span className='z-50'>here's a taste of <br /> what we cook</span>
       </h1>
 
       <div className='w-full px-[1rem] flex gap-[1rem] pb-[3rem] overflow-hidden overflow-x-auto scrollbar'>
