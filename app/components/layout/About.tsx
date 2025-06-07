@@ -1,7 +1,6 @@
 'use client';
 
 import Threads from '../ui/Threads'
-import TextPressure from '../ui/TextPressure';
 
 export default function About() {
 

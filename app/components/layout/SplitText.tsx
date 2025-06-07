@@ -117,7 +117,7 @@ const SplitText: React.FC<SplitTextProps> = ({
   return (
     <p
       ref={ref}
-      className={`split-parent ${className}`}
+      className={`split-parent text-center ${className}`}
       style={{
         textAlign,
         overflow: "hidden",
@@ -129,10 +129,10 @@ const SplitText: React.FC<SplitTextProps> = ({
         mainClassName='text-center w-full flex justify-center items-center'
         texts={[
           "convert ✽",
-          "scale effortlessly ✽",
-          "impress your audience ✽",
-          "drive results ✽",
-          "grow your business ✽",
+          "scale ✽",
+          "impress ✽",
+          "drive results",
+          "grow ✽",
         ]}
         staggerDuration={0.025}
       />

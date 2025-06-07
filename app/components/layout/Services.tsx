@@ -5,7 +5,7 @@ import Scroll from '../ui/Scroll';
 
 export default function Services() {
   return (
-    <section className='flex flex-col gap-[7rem] py-[3rem] relative'>
+    <section id='services' className='flex flex-col gap-[7rem] py-[3rem] relative'>
       <Particles alphaParticles={true}/>
       <header className="text-center mt-[15rem]">
         <h1 className="font-bold text-[2.5rem] md:text-[3rem]">

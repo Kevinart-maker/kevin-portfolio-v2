@@ -26,7 +26,7 @@ export default function Header() {
               Available for New Projects.
             </div>
               {/* <AnimatedText /> */}
-            <h1 className="font-bold leading-tight text-[3rem] md:text-[4rem] text-center text-white">
+            <h1 className="font-bold leading-tight text-[3rem] md:text-[3rem] text-center text-white">
               <SplitText 
                 delay={30}
                 duration={0.2}/>

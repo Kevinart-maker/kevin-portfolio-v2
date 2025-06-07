@@ -40,7 +40,7 @@ export default function Works() {
   ))
   
   return (
-    <div className="md:px-[5rem] mt-[10rem] xl:mt-[15rem] flex flex-col gap-[7rem] items-center w-full text-left relative">
+    <div id='works' className="md:px-[5rem] mt-[10rem] xl:mt-[15rem] flex flex-col gap-[7rem] items-center w-full text-left relative">
 
       <h1 className="font-bold text-[2.5rem] text-center md:text-[3rem] relative">
         <div className="absolute right-0 md:-right-[10rem] -top-5">

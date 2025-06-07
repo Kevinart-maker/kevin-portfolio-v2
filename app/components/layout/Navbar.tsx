@@ -24,8 +24,8 @@ export default function Navbar() {
             </div>
 
             <div className='hidden md:flex  items-center gap-[1.5rem]'>
-              <Link href="/">Work</Link>
-              <Link href="/">Services</Link>
+              <a href="#services">Services</a>
+              <a href="#works">Work</a>
               <Link href="/">Testimonials</Link>
               <a href="https://cal.com/odeyemikevin/15min" target='_blank' className='bg-[var(--background)] text-[var(--foreground)] px-6 py-2 rounded-[2rem]'>Book a call</a>
               <ThemeToggle />
@@ -42,9 +42,9 @@ export default function Navbar() {
 
 
             <div className='flex flex-col w-full gap-3 mt-[10rem] text-2xl font-medium'>
-              <div>Work</div>
-              <div className='w-full h-[0.1px] bg-white'/>
               <div>Services</div>
+              <div className='w-full h-[0.1px] bg-white'/>
+              <div>Work</div>
               <div className='w-full h-[0.1px] bg-white'/>
               <div>Testimonials</div>
               <div className='w-full h-[0.1px] bg-white'/>
