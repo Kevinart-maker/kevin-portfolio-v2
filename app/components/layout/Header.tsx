@@ -35,7 +35,7 @@ export default function Header() {
             <p className="text-sm">We specialize in delivering websites and apps that focuses on business growth for our clients.</p>
           </div>
 
-          <a href="https://x.com/OdeyemiKevin/status/1928580530087321626?t=olFkOrXGAkldYqS2Hg0kSg&s=19" target="_blank" className="bg-[var(--background)] text-[var(--foreground)] px-6 py-2 rounded-[2rem]">Hire me</a>
+          <a href="https://x.com/OdeyemiKevin/status/1928580530087321626?t=olFkOrXGAkldYqS2Hg0kSg&s=19" target="_blank" className="bg-[var(--background)] text-[var(--foreground)] px-6 py-2 rounded-[2rem]">Free audit</a>
         </header>
         
         <div className="relative w-full h-full">

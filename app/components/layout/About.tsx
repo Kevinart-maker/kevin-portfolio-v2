@@ -15,7 +15,7 @@ export default function About() {
         </div>
 
         <div className='absolute bottom-0 flex flex-col gap-6 xl:w-[50%] text-center md:px-10'>
-            <h1 className='font-bold text-[3rem]'>
+            <h1 className='font-bold text-[3rem] md:text-[4rem] tracking-tighter'>
               hey there!
             </h1>
             <p className='text-lg text-[#808080]'>

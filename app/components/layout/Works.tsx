@@ -1,4 +1,5 @@
 import { works } from "@/app/data/data"
+import HeadText from '../ui/HeadText';
 
 export default function Works() {
   const work = works.map((item, index)=>(
@@ -42,22 +43,11 @@ export default function Works() {
   return (
     <div id='works' className="md:px-[5rem] mt-[10rem] xl:mt-[15rem] flex flex-col gap-[7rem] items-center w-full text-left relative">
 
-      <h1 className="font-bold text-[2.5rem] text-center md:text-[3rem] relative">
-        <div className="absolute right-0 md:-right-[10rem] -top-5">
-          <div className='w-px h-[3rem] bg-[#474747]'/>
-          <div className='w-[3rem] h-px bg-[#474747] translate-x-[-1.5rem] translate-y-[-1.5rem]'/>
-        </div>
+    <HeadText text={<span>here's a taste of <br /> what we cook</span>}/>
 
-        <div className="absolute left-10 md:-left-[8rem] xl:-left-[10rem] -top-5">
-          <div className='w-px h-[3rem] bg-[#474747]'/>
-          <div className='w-[3rem] h-px bg-[#474747]  translate-x-[-1.5rem] translate-y-[-1.5rem]'/>
-        </div>
-        <span className='z-50'>here's a taste of <br /> what we cook</span>
-      </h1>
-
-      <div className='w-full px-[1rem] flex gap-[1rem] pb-[3rem] overflow-hidden overflow-x-auto scrollbar'>
-        {work}
-      </div>
+    <div className='w-full px-[1rem] flex gap-[1rem] pb-[3rem] overflow-hidden overflow-x-auto scrollbar'>
+      {work}
+    </div>
     </div>
   )
 }
