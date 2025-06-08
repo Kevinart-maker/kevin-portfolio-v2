@@ -9,7 +9,7 @@ export default function Services() {
       <Particles alphaParticles={true}/>
       <header className="text-center mt-[15rem]">
         <h1 className="font-bold text-[2.5rem] md:text-[3rem]">
-          what we can do for you
+          what we can do <br /> for you
         </h1>
       </header>
 
