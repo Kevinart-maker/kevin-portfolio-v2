@@ -23,7 +23,7 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <body
-        className={`${montserrat.variable} antialiased`}
+        className={`${montserrat.variable} antialiased px-1 md:px-[2rem]`}
       >
       <ThemeProvider defaultTheme="system" enableSystem>
         <div className="w-full h-[10px] bg-[var(--background)]"/>

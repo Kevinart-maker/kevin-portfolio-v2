@@ -20,7 +20,7 @@ export default function Navbar() {
         
         <div className='flex justify-between items-center p-5 px-[2rem] blurry rounded-[3rem] w-[85%] absolute left-1/2 top-[calc(7px+1rem)] transform -translate-x-1/2 text-white'>
             <div className='flex items-center gap-[1.8rem] text-3xl font-bold'>
-              <h1>Kevin.</h1>
+              <Link href='/'>Kevin.</Link>
             </div>
 
             <div className='hidden md:flex  items-center gap-[1.5rem]'>

@@ -7,7 +7,7 @@ import Services from "./components/layout/Services";
 
 export default function Home() {
   return (
-    <main className="bg-[var(--background)] px-1 md:px-[2rem]">
+    <main className="bg-[var(--background)]">
 
       <div className='flex flex-col'>
         <Header />
