@@ -8,8 +8,6 @@ import Services from "./components/layout/Services";
 export default function Home() {
   return (
     <main className="bg-[var(--background)] px-1 md:px-[2rem]">
-      <div className="w-full h-[10px] bg-[var(--background)]"/>
-      <Navbar />
 
       <div className='flex flex-col'>
         <Header />

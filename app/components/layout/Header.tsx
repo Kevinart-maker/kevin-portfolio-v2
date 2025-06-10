@@ -1,6 +1,7 @@
 import ClickSpark from "../ui/ClickSpark";
 import Iridescence from "../ui/Iridescence";
 import SplitText from "./SplitText";
+import Link from 'next/link'
 
 export default function Header() {
   return (
@@ -35,7 +36,7 @@ export default function Header() {
             <p className="text-sm">We specialize in delivering websites and apps that focuses on business growth for our clients.</p>
           </div>
 
-          <a href="https://x.com/OdeyemiKevin/status/1928580530087321626?t=olFkOrXGAkldYqS2Hg0kSg&s=19" target="_blank" className="bg-[var(--background)] text-[var(--foreground)] px-6 py-2 rounded-[2rem]">Free audit</a>
+          <Link href="/waitlist" className="bg-[var(--background)] text-[var(--foreground)] px-6 py-2 rounded-[2rem]">Free Template</Link>
         </header>
         
         <div className="relative w-full h-full">
