@@ -43,6 +43,13 @@ export default function Home() {
         <Works />
       </div>
 
+      <div className="h-[1000vh] sticky top-[4rem]">
+          <div className="sticky top-[5rem] bg-amber-400 w-full h-[30rem] z-10"/>
+          <div className="sticky top-[6rem] bg-amber-100 w-full h-[30rem] z-20"/>
+          <div className="sticky top-[7rem] bg-amber-300 w-full h-[30rem] z-30"/>
+          <div className="sticky top-[8rem] bg-amber-500 w-full h-[30rem] z-40"/>
+      </div>
+
 
     </main>
   );
