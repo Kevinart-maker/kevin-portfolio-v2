@@ -3,6 +3,7 @@
 import Link from 'next/link';
 import ThemeToggle from './../ui/ThemeToggle';
 import { useState } from 'react';
+import Pulse from '../ui/Pulse';
 
 export default function Navbar() {
   const [show, setShow] = useState(false);
@@ -27,7 +28,10 @@ export default function Navbar() {
               <a href="#services">Services</a>
               <a href="#works">Work</a>
               <a href="#testimonials">Testimonials</a>
-              <a href="https://cal.com/odeyemikevin/15min" target='_blank' className='bg-[var(--background)] text-[var(--foreground)] px-6 py-2 rounded-[2rem]'>Book a call</a>
+              <a href="https://cal.com/odeyemikevin/15min" target='_blank' className='bg-[var(--background)] text-[var(--foreground)] px-6 py-2 rounded-[2rem] flex items-center gap-2'>
+                <span>Book a call</span>
+                <Pulse />
+              </a>
               <ThemeToggle />
             </div>
             <div className={`flex md:hidden font-medium border rounded-[2rem] h-fit p-2 px-4 border-[var(--background)] bg-[var(--background)] text-[var(--foreground)]`} onClick={handleClick}>Menu</div>

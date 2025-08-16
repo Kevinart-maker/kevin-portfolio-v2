@@ -1,22 +1,12 @@
+'use client';
+
 import { works } from "@/app/data/data"
 import HeadText from '../ui/HeadText';
+import { motion } from "motion/react";
 
 export default function Works() {
   const work = works.map((item, index)=>(
-    // <TiltedCard 
-    //   key={index}
-    //   imageSrc={item.image}
-    //   altText={item.title}
-    //   captionText={item.title}
-    //   overlayContent={
-    //     <div>
-    //       <h1>{item.title}</h1>
-    //       <p>{item.description}</p>
-    //     </div>
-    //   }
-    //   />
-
-    <a href={item.url} target='_blank' key={index} className='min-w-[18rem] h-[30rem] flex flex-col justify-between rounded-[2rem] border border-[#474747] text-sm text-[var(--text)] py-[1rem] hover:bg-[var(--hover)] hover:text-[var(--background)]'>
+    <a href={item.url} target='_blank' key={index} className='min-w-[20rem] h-[30rem] flex flex-col justify-between rounded-[2rem] border border-[#474747] text-sm text-[var(--text)] py-[1rem] hover:bg-[var(--hover)] hover:text-[var(--background)]'>
       <div className="p-[1rem] pt-[1.5rem] px-[1.5rem] h-[40%] flex flex-col gap-4">
         <span className='text-[#808080]'>
           {item.description}
@@ -45,8 +35,10 @@ export default function Works() {
 
     <HeadText text={<span>here's a taste of <br /> what we cook</span>}/>
 
-    <div className='w-full px-[1rem] flex gap-[1rem] pb-[3rem] overflow-hidden overflow-x-auto scrollbar'>
-      {work}
+    <div className="overflow-hidden w-full">
+      <motion.div initial={{ translateX: '100%' }} whileInView={{ translateX: 0 }} viewport={{ once: true }} className='w-full px-[1rem] flex gap-[1rem] pb-[3rem] overflow-hidden overflow-x-auto scrollbar'>
+        {work}
+      </motion.div>
     </div>
     </div>
   )

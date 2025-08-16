@@ -1,7 +1,11 @@
+'use client';
+
 import ClickSpark from "../ui/ClickSpark";
 import Iridescence from "../ui/Iridescence";
+import Pulse from "../ui/Pulse";
 import SplitText from "./SplitText";
 import Link from 'next/link'
+import { motion } from 'motion/react';
 
 export default function Header() {
   return (
@@ -14,34 +18,28 @@ export default function Header() {
     >
       <div className='overflow-hidden w-full h-[90vh] rounded-[2rem] relative text-white'>
         
-        <header className="absolute flex flex-col gap-6 items-center justify-center inset-0 z-50  text-xs md:text-lg"> 
+      <motion.header initial={{ scale: 0.5 }} whileInView={{ scale: 1 }} transition={{ duration: 0.4, type: 'spring' }}  className="absolute flex flex-col gap-6 items-center justify-center inset-0 z-50  text-xs md:text-lg"> 
           <div className="flex flex-col items-center text-center gap-2">
-            <div className="cursor-default px-6 py-2 text-xs rounded-[3rem] border flex items-center gap-3">
-                <div className="relative w-fit h-fit flex items-center justify-center">
-                <div className="absolute inset-0 flex items-center justify-center zoom -z-10"/>
-                  <span
-                  className="inline-block w-[10px] h-[10px] rounded-full bg-green-400 animate-pulse"
-                  aria-label="Online status"
-                  />
-              </div>
+            <div className="cursor-default px-6 py-2 text-xs rounded-[3rem] glassy flex items-center gap-3">
+              <Pulse />
               Available for New Projects.
             </div>
               {/* <AnimatedText /> */}
-            <h1 className="font-bold leading-tight text-[3rem] md:text-[3rem] text-center text-white">
-              <SplitText 
-                delay={30}
-                duration={0.2}/>
-            </h1>
+            <SplitText 
+              delay={30}
+              duration={0.2}
+              className="font-bold leading-tight text-[3rem] xl:text-[4rem] xl:w-[70%] text-center text-white"
+            />
 
-            <p className="text-sm">We specialize in delivering websites and apps that focuses on business growth for our clients.</p>
+            <p className="text-sm" style={{ textShadow: '2px 2px 4px rgba(0,0,0,0.2)' }} >We specialize in delivering websites and apps that focuses on business growth for our clients.</p>
           </div>
 
-          <Link href="/waitlist" className="bg-[var(--background)] text-[var(--foreground)] px-6 py-2 rounded-[2rem]">Free Template</Link>
-        </header>
+          <a href="https://cal.com/odeyemikevin/15min" className="bg-[var(--background)] text-[var(--foreground)] px-8 py-2 rounded-[2rem]">Book a call</a>
+        </motion.header>
         
         <div className="relative w-full h-full">
-          <div className="absolute inset-0 bg-black/40 pointer-events-none rounded-[2rem]" />
-          <Iridescence />
+          <div className="absolute inset-0 pointer-events-none rounded-[2rem]" />
+          <Iridescence color={[0.4, 0.6, 1]}/>
         </div>
       </div>
     </ClickSpark>

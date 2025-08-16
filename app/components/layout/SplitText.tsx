@@ -122,20 +122,24 @@ const SplitText: React.FC<SplitTextProps> = ({
         textAlign,
         overflow: "hidden",
         display: "inline-block",
+        textShadow: '1px 1px 3px rgba(0,0,0,0.2)',
       }}
     >
-      <span>Strategic websites and apps, built to </span>
-      <WordListSwap
-        mainClassName='text-center w-full flex justify-center items-center'
-        texts={[
-          "convert ✽",
-          "scale ✽",
-          "impress ✽",
-          "drive results",
-          "grow ✽",
-        ]}
-        staggerDuration={0.025}
-      />
+      <span className="items-center break-keep hyphens-none">
+        Strategic websites and apps, built to{" "}
+        <WordListSwap
+          mainClassName="inline-flex items-center whitespace-nowrap"
+          texts={[
+            "convert ✽",
+            "scale ✽",
+            "impress ✽",
+            "drive results",
+            "grow ✽",
+          ]}
+          staggerDuration={0.025}
+          splitBy="words"
+        />
+      </span>
     </p>
   );
 };

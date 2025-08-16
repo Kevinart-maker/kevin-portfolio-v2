@@ -22,7 +22,16 @@ export const projectSlide: ProjectSlide[] = [
     { image: '/project8.png' },
 ]
 
-export const works: Works[] = [
+export const works: Works[] = [    
+    {
+        image: '/project11.png',
+        title: 'PACEBYEA',
+        description: 'a bilingual platform to help you manage your finances and make informed decisions about your money.',
+        summary: 'your personal finance assistant.',
+        niche: 'FINANCE',
+        url: 'https://pacebya.com',
+        live: 'LIVE'
+    },
     {
         image: '/project5.png',
         title: 'Clabed',
@@ -71,10 +80,10 @@ export const works: Works[] = [
     {
         image: '/project1.png',
         title: 'Astraeas',
-        description: '',
-        summary: '',
+        description: 'an ecommerce platform for selling unique art pieces and rare artifacts. Discover, collect, and purchase curated artworks from talented artists and collectors.',
+        summary: 'marketplace for art and artifacts.',
         niche: 'ECOMM',
-        url: '',
+        url: 'https://astraeas.netlify.app',
         live: 'IN PROGRESS'
     },
     {

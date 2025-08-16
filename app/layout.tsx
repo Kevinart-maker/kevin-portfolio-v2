@@ -4,6 +4,7 @@ import "./globals.css";
 import "./index.css";
 import { ThemeProvider } from 'next-themes';
 import Navbar from "./components/layout/Navbar";
+import Footer from "./components/layout/Footer";
 
 const montserrat = Montserrat({
   variable: "--font-montserrat",
@@ -29,6 +30,7 @@ export default function RootLayout({
         <div className="w-full h-[10px] bg-[var(--background)]"/>
         <Navbar />
         {children}
+        <Footer />
       </ThemeProvider>
       </body>
     </html>

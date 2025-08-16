@@ -42,10 +42,17 @@ body {
 /* Optional: Add a soft shadow or background blur layer */
 
 .blurry {
-  backdrop-filter: blur(10px);
+  backdrop-filter: blur(20px);
   background: rgba(51, 51, 51, 0.6);
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   /* border: 1px solid rgba(215, 210, 210, 0.3); */
+}
+
+.glassy {
+  backdrop-filter: blur(30px);
+  background: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  border: 0.1px solid rgba(255, 255, 255, 0.384);
 }
 
 /* irridescence comp */
@@ -106,7 +113,7 @@ body {
 
 /* pulse in header */
 .zoom{
-  background-color: #07d973; /* Adjust color as needed */
+  background-color: #62ace6; /* Adjust color as needed */
   border-radius: 50%;
   width: 10px; /* Adjust size as needed */
   height: 10px; /* Adjust size as needed */
