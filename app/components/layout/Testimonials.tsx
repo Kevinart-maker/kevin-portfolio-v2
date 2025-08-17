@@ -112,7 +112,7 @@ export default function Testimonial() {
                     </div>
 
                     <div className='flex items-center gap-2 border border-[#474747] rounded-[2rem] p-2 px-[1.5rem]'>
-                        <GiRoundStar className='text-[#62ace6]'/>
+                        <GiRoundStar className='text-[#5c54f9]'/>
                         <span>{tst.rating}.0</span>
                     </div>
 
@@ -149,7 +149,7 @@ export default function Testimonial() {
                     </div>
 
                     <div className='flex items-center gap-2 border border-[#474747] rounded-[2rem] p-2 px-[1.5rem]'>
-                        <GiRoundStar className='text-[#62ace6]'/>
+                        <GiRoundStar className='text-[#5c54f9]'/>
                         <span>{tst.rating}.0</span>
                     </div>
 

@@ -25,10 +25,10 @@ export default function Footer() {
         <p className='text-center text-sm text-gray-500'>© {new Date().getFullYear()} Kevin. All rights reserved.</p>
 
         <div className='flex gap-4 text-[#808080]'>
-            <IoLogoInstagram  className='hover:scale-[1.5] hover:rotate-[360deg]'/>
-            <FaXTwitter className='hover:scale-[1.5] hover:rotate-[360deg]' />
-            <FaLinkedinIn className='hover:scale-[1.5] hover:rotate-[360deg]' />
-            <FaTiktok className='hover:scale-[1.5] hover:rotate-[360deg]' />
+            <a href="https://www.instagram.com/kevinodeyemi" target='_blank'><IoLogoInstagram  className='hover:scale-[1.5] hover:rotate-[360deg]'/></a>
+            <a href="https://x.com/odeyemikevin" target='_blank'><FaXTwitter className='hover:scale-[1.5] hover:rotate-[360deg]' /></a>
+            <a href="https://www.linkedin.com/in/odeyemikevin" target='_blank'><FaLinkedinIn className='hover:scale-[1.5] hover:rotate-[360deg]' /></a>
+            <a href="https://www.tiktok.com/@odeyemikevin" target='_blank'><FaTiktok className='hover:scale-[1.5] hover:rotate-[360deg]' /></a>
         </div>
       </div>
     </footer>
