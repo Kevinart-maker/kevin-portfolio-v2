@@ -18,7 +18,7 @@ export default function Header() {
     >
       <div className='overflow-hidden w-full h-[90vh] rounded-[2rem] relative text-white'>
         
-      <motion.header initial={{ scale: 0.5 }} whileInView={{ scale: 1 }} transition={{ duration: 0.4, type: 'spring' }}  className="absolute flex flex-col gap-6 items-center justify-center inset-0 z-50  text-xs md:text-lg"> 
+      <motion.header initial={{ opacity: 0, scale: 0.5 }} whileInView={{ opacity: 1, scale: 1 }} transition={{ duration: 0.4, type: 'spring' }}  className="absolute flex flex-col gap-6 items-center justify-center inset-0 z-50  text-xs md:text-lg"> 
           <div className="flex flex-col items-center text-center gap-2">
             <div className="cursor-default px-6 py-2 text-xs rounded-[3rem] glassy flex items-center gap-3">
               <Pulse />
