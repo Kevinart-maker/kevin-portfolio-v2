@@ -25,6 +25,15 @@ export const projectSlide: ProjectSlide[] = [
 export const works: Works[] = [    
     {
         image: '/project11.png',
+        title: 'CINEMATIC',
+        description: 'a tool for turning images into cinematic masterpieces.',
+        summary: 'your cinematic image editor.',
+        niche: 'EDITOR',
+        url: 'https://cinematic.pxxl.live',
+        live: 'LIVE'
+    },
+    {
+        image: '/project11.png',
         title: 'PACEBYEA',
         description: 'a bilingual platform to help you manage your finances and make informed decisions about your money.',
         summary: 'your personal finance assistant.',
