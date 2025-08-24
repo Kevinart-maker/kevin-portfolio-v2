@@ -24,7 +24,7 @@ export const projectSlide: ProjectSlide[] = [
 
 export const works: Works[] = [    
     {
-        image: '/project11.png',
+        image: '',
         title: 'CINEMATIC',
         description: 'a tool for turning images into cinematic masterpieces.',
         summary: 'your cinematic image editor.',
@@ -49,6 +49,15 @@ export const works: Works[] = [
         niche: 'ECOMM',
         url: 'https://clabedautos.com',
         live: 'LIVE'
+    },
+    {
+        image: '',
+        title: 'TalentHub',
+        description: 'gain deep understanding of personal traits, team dynamics, and organizational health with our comprehensive assessment suite, interpreted by advanced AI.',
+        summary: "Africa's leading HR & Payroll software solution, empowering businesses for a seamless future.",
+        niche: 'SaaS',
+        url: 'https://talentedhub.netlify.app/',
+        live: 'IN PROGRESS'
     },
     {
         image: '/project8.png',
