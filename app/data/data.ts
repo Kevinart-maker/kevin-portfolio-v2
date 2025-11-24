@@ -29,7 +29,7 @@ export const works: Works[] = [
         description: 'a tool for turning images into cinematic masterpieces.',
         summary: 'your cinematic image editor.',
         niche: 'EDITOR',
-        url: 'https://cinematic.pxxl.live',
+        url: 'https://cinematic-ashy.vercel.app',
         live: 'LIVE'
     },
     {
@@ -38,7 +38,7 @@ export const works: Works[] = [
         description: 'a bilingual platform to help you manage your finances and make informed decisions about your money.',
         summary: 'your personal finance assistant.',
         niche: 'FINANCE',
-        url: 'https://pacebya.com',
+        url: 'https://pacebyea.com',
         live: 'LIVE'
     },
     {
