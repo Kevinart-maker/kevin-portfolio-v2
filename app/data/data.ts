@@ -101,7 +101,7 @@ export const works: Works[] = [
         description: 'an ecommerce platform for selling unique art pieces and rare artifacts. Discover, collect, and purchase curated artworks from talented artists and collectors.',
         summary: 'marketplace for art and artifacts.',
         niche: 'ECOMM',
-        url: 'https://astraeas.netlify.app',
+        url: 'https://astraeacurate.com/',
         live: 'IN PROGRESS'
     },
     {
