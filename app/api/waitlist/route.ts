@@ -46,7 +46,7 @@ export async function POST(req: Request) {
       from: 'Let’s build your highest converting page yet! <noreply@kevinodeyemi.com>',
       to: email,
       subject: 'Let’s build your page!',
-      html: `<div style="font-family: 'Inter', sans-serif;"> <img src="https://res.cloudinary.com/duf3ztnhv/image/upload/v1766753789/kevin_wfxcxk.png" alt="Logo" style="width: 100%; height: 100%; border-radius: 2rem;"/> <p>Hi ${name},</p><p> Thanks for applying! Please book a call with me to discuss your project.</p> <a href="https://cal.com/odeyemikevin/let-s-build-your-highest-converting-page-yet" style="background-color: #fff; color: #000; padding: 10px 20px; margin-top: 1rem; border-radius: 2rem; text-decoration: none;">Book a call</a></div>`,
+      html: `<div style="font-family: 'Inter', sans-serif;"> <img src="https://res.cloudinary.com/duf3ztnhv/image/upload/v1766753789/kevin_wfxcxk.png" alt="Logo" style="width: 100%; height: 100%; border-radius: 2rem;"/> <p>Hi ${name},</p><p> Thanks for applying! Please book a call with me to discuss your project.</p> <a href="https://cal.com/odeyemikevin/let-s-build-your-highest-converting-page-yet" style="background-color: #000; color: #fff; padding: 10px 20px; margin-top: 1rem; border-radius: 2rem; text-decoration: none;">Book a call</a></div>`,
     });
   } catch (err) {
     return NextResponse.json({ error: 'Failed to send email' }, { status: 500 });
