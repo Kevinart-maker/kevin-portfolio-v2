@@ -5,6 +5,7 @@ import "./index.css";
 import { ThemeProvider } from 'next-themes';
 import Navbar from "./components/layout/Navbar";
 import Footer from "./components/layout/Footer";
+import { Analytics } from '@vercel/analytics/react';
 
 const montserrat = Montserrat({
   variable: "--font-montserrat",
@@ -31,6 +32,7 @@ export default function RootLayout({
         <Navbar />
         {children}
         <Footer />
+        <Analytics />
       </ThemeProvider>
       </body>
     </html>
