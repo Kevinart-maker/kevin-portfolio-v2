@@ -121,9 +121,10 @@ const SplitText: React.FC<SplitTextProps> = ({
         textAlign,
         overflow: "hidden",
         display: "inline-block",
+        textShadow: '1px 1px 3px rgba(0,0,0,0.2)',
       }}
     >
-      <span>Get Early Access to the Free Landing Page Template! </span>
+      <span>Let's build your highest converting page yet! </span>
     </p>
   );
 };

@@ -39,7 +39,7 @@ export default function Page() {
       setLoading(false);
 
       if (response.ok) {
-        setMessage(result.message || 'You have been added to the waitlist!');
+        setMessage(result.message || 'Applied! Check your email/spam for next steps.');
         reset();
       } else {
         setErrorMessage(result.error || 'Something went wrong. Please try again.');
@@ -64,29 +64,29 @@ export default function Page() {
                   aria-label="Online status"
                 />
               </div>
-              Limited slots available.
+              Just one slot available.
             </div>
 
-            <h1 className="font-bold leading-tight text-[2rem] xl:text-[3rem] md:text-[3rem] text-center text-white xl:w-[60%]">
+            <h1 className="font-bold leading-tight text-[1.5rem] xl:text-[3rem] md:text-[3rem] text-center text-white xl:w-[60%]">
               <SplitText delay={30} duration={0.2} />
             </h1>
 
-            <p className="text-sm">Great ideas shouldn't wait on design. Grab the template and launch faster.</p>
+            <p className="text-xs md:text-sm xl:w-[50%]">I'm selecting one high-potential startup to design and build a flagship landing page for $0 fee, 100% focused on revenue. Apply below to see if we're a fit.</p>
           </div>
 
           {message && (
-            <p className='bg-green-200 text-sm text-green-950 w-fit p-2 rounded'>
+            <p className='bg-green-200 text-xs text-green-950 w-fit p-2 rounded'>
               {message}
             </p>
           )}
 
           {errorMessage && (
-            <p className='bg-red-200 text-sm text-red-950 w-fit p-2 rounded'>
+            <p className='bg-red-200 text-xs text-red-950 w-fit p-2 rounded'>
               {errorMessage}
             </p>
           )}
 
-          <form
+          { !message && !errorMessage && <form
             className='flex flex-col gap-4 text-sm w-full xl:w-[40%]'
             onSubmit={handleSubmit(onSubmit)}
           >
@@ -125,9 +125,9 @@ export default function Page() {
               disabled={loading}
               className='bg-[var(--background)] text-[var(--text)] p-[0.5rem] rounded-[2rem]'
             >
-              {loading ? 'Submitting...' : 'Get the template'}
+              {loading ? 'Applying...' : 'Apply'}
             </button>
-          </form>
+          </form>}
         </header>
 
         <div className="relative w-full h-full">

@@ -5,7 +5,7 @@ export default function Pulse() {
     <div className="relative w-fit h-fit flex items-center justify-center">
         <div className="absolute inset-0 flex items-center justify-center zoom -z-10" />
         <span
-        className="inline-block w-[10px] h-[10px] rounded-full bg-[#5c54f9] animate-pulse"
+        className="inline-block w-[10px] h-[10px] rounded-full bg-green-400 animate-pulse"
         aria-label="Online status"
         />
     </div>
