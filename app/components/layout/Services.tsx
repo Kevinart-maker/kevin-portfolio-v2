@@ -22,8 +22,8 @@ export default function Services() {
       </header>
 
       <div className="h-full flex flex-col gap-2">
-        <div className="sticky top-[5rem] bg-[var(--background)] border border-[#474747] rounded-[2rem] w-full h-[30rem] z-10">
-          <div className="p-4 flex flex-col items-center gap-4 justify-center h-full">
+        <div className="sticky top-[30%] rotate-3 md:rotate-0 bg-[var(--background)] border border-[#474747] rounded-[2rem] w-full md:h-[30rem] z-10">
+          <div className="p-4 py-12 md:py-4 flex flex-col items-center gap-4 justify-center h-full">
             <h3 className="flex flex-col items-center gap-4 text-[2rem] xl:text-[4rem] font-bold">
               <span>Web</span> 
               <motion.div
@@ -39,8 +39,8 @@ export default function Services() {
             <p className="text-xs md:text-sm">Building responsive and functional websites.</p>
           </div>
         </div>
-        <div className="sticky top-[8rem] bg-[var(--background)] border border-[#474747] rounded-[2rem] w-full h-[30rem] z-10">
-          <div className="p-4 flex flex-col items-center gap-4 justify-center h-full">
+        <div className="sticky top-[calc(30%+3rem)] -rotate-3 md:rotate-0 bg-[var(--background)] border border-[#474747] rounded-[2rem] w-full md:h-[30rem] z-10">
+          <div className="p-4 py-12 md:py-4 flex flex-col items-center gap-4 justify-center h-full">
             <h3 className="flex flex-col items-center gap-4 text-[2rem] xl:text-[4rem] font-bold">
               <span>Interface</span> 
               <motion.div
@@ -56,8 +56,8 @@ export default function Services() {
             <p className="text-xs md:text-sm">Creating user-friendly interfaces.</p>
           </div>
         </div>
-        <div className="sticky top-[11rem] bg-[var(--background)] border border-[#474747] rounded-[2rem] w-full h-[30rem] z-10">
-          <div className="p-4 flex flex-col items-center gap-4 justify-center h-full">
+        <div className="sticky top-[calc(30%+6rem)] rotate-3 md:rotate-0 bg-[var(--background)] border border-[#474747] rounded-[2rem] w-full md:h-[30rem] z-10">
+          <div className="p-4 py-12 md:py-4 flex flex-col items-center gap-4 justify-center h-full">
             <h3 className="flex flex-col items-center gap-4 text-[2rem] xl:text-[4rem] font-bold">
               <span>Mobile App</span> 
               <motion.div
@@ -73,8 +73,8 @@ export default function Services() {
             <p className="text-xs md:text-sm">Developing apps for iOS and Android.</p>
           </div>
         </div>
-        <div className="sticky top-[14rem] bg-[var(--background)] border border-[#474747] rounded-[2rem] w-full h-[30rem] z-10">
-          <div className="p-4 flex flex-col items-center gap-4 justify-center h-full">
+        <div className="sticky top-[calc(30%+9rem)] -rotate-3 md:rotate-0 bg-[var(--background)] border border-[#474747] rounded-[2rem] w-full md:h-[30rem] z-10">
+          <div className="p-4 py-12 md:py-4 flex flex-col items-center gap-4 justify-center h-full">
             <h3 className="flex flex-col items-center gap-4 text-[2rem] xl:text-[4rem] font-bold">
               <span>Conversion</span> 
               <motion.div
